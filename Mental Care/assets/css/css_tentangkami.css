@@ -1,0 +1,218 @@
+.hero {
+  background: url("../img/banner.jpg") no-repeat center center/cover;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: bold;
+  color: #b07ab4;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+/* section 1 */
+.about {
+  padding: 4rem 2rem;
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 8rem 18rem;
+  }
+}
+
+.about h2 {
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+}
+
+.about h3 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.about-content img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.highlight {
+  color: #a17db8;
+}
+
+/* section 2 */
+.apa-kami-lakukan {
+  background: url("../img/konsultasi.jpg") no-repeat center center/cover;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.apa-kami-lakukan .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(176, 122, 180, 0.35);
+}
+
+.apa-kami-lakukan .text {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: #ffffff;
+}
+
+.apa-kami-lakukan .text h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.apa-kami-lakukan .text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* section 3 */
+.visi-misi-section {
+  margin-top: 16rem;
+  background: url("../img/ngobrol.jpg") no-repeat center center/cover;
+  min-height: 600px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+.visi-misi-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(176, 122, 180, 0.35);
+}
+
+.visi-misi-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 2rem;
+}
+
+.visi-misi-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  width: 90%;
+  margin: 2rem auto 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .visi-misi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .visi-misi-grid {
+    gap: 10rem;
+    width: 80%;
+    margin: 7rem auto 0 auto;
+  }
+}
+
+.visi-misi-card {
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .visi-misi-card {
+    padding: 2rem;
+  }
+}
+
+.card-label {
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  background-color: #b07ab4;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+/* section 4 */
+.tim {
+  margin: 6rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tim .desc {
+  max-width: 600px;
+  margin: auto;
+  font-size: 0.9rem;
+}
+
+.anggota-tim {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.anggota {
+  width: 160px;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.anggota img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
